@@ -1,0 +1,31 @@
+<% title "Eod Prices" %>
+
+<table>
+  <tr>
+    <th>Asset</th>
+    <th>Mark Date</th>
+    <th>Open Px</th>
+    <th>High Px</th>
+    <th>Low Px</th>
+    <th>Close Px</th>
+    <th>Volume</th>
+    <th>Open Interest</th>
+  </tr>
+  <% for eod_price in @eod_prices %>
+    <tr>
+      <td><%= eod_price.asset_id %></td>
+      <td><%= eod_price.mark_date %></td>
+      <td><%= eod_price.open_px %></td>
+      <td><%= eod_price.high_px %></td>
+      <td><%= eod_price.low_px %></td>
+      <td><%= eod_price.close_px %></td>
+      <td><%= eod_price.volume %></td>
+      <td><%= eod_price.open_interest %></td>
+      <td><%= link_to "Show", eod_price %></td>
+      <td><%= link_to "Edit", edit_eod_price_path(eod_price) %></td>
+      <td><%= link_to "Destroy", eod_price, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Eod Price", new_eod_price_path %></p>

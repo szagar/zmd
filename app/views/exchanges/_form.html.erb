@@ -1,0 +1,16 @@
+<%= form_for @exchange do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :code %><br />
+    <%= f.text_field :code %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :load_issues %><br />
+    <%= f.check_box :load_issues %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

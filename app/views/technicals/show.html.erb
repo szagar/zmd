@@ -1,0 +1,128 @@
+<% title "Technicals" %>
+
+<p>
+  <strong>Asset:</strong>
+  <%= @technicals.asset_id %>
+</p>
+<p>
+  <strong>Previous:</strong>
+  <%= @technicals.previous %>
+</p>
+<p>
+  <strong>Change:</strong>
+  <%= @technicals.change %>
+</p>
+<p>
+  <strong>Volume Change:</strong>
+  <%= @technicals.volume_change %>
+</p>
+<p>
+  <strong>Week High:</strong>
+  <%= @technicals.Week_high %>
+</p>
+<p>
+  <strong>Week Low:</strong>
+  <%= @technicals.Week_low %>
+</p>
+<p>
+  <strong>Week Change:</strong>
+  <%= @technicals.Week_change %>
+</p>
+<p>
+  <strong>Avg Week Change:</strong>
+  <%= @technicals.avg_week_change %>
+</p>
+<p>
+  <strong>Avg Week Volume:</strong>
+  <%= @technicals.avg_week_volume %>
+</p>
+<p>
+  <strong>Month High:</strong>
+  <%= @technicals.month_high %>
+</p>
+<p>
+  <strong>Month Low:</strong>
+  <%= @technicals.month_low %>
+</p>
+<p>
+  <strong>Month Change:</strong>
+  <%= @technicals.month-change %>
+</p>
+<p>
+  <strong>Avg Month Change:</strong>
+  <%= @technicals.avg_month-change %>
+</p>
+<p>
+  <strong>Avg Month Volume:</strong>
+  <%= @technicals.avg_month_volume %>
+</p>
+<p>
+  <strong>Year High:</strong>
+  <%= @technicals.year_high %>
+</p>
+<p>
+  <strong>Year Low:</strong>
+  <%= @technicals.year_low %>
+</p>
+<p>
+  <strong>Year Change:</strong>
+  <%= @technicals.year_change %>
+</p>
+<p>
+  <strong>Avg Year Change:</strong>
+  <%= @technicals.avg_year_change %>
+</p>
+<p>
+  <strong>Avg Year Volume:</strong>
+  <%= @technicals.avg_year_volume %>
+</p>
+<p>
+  <strong>Ma5:</strong>
+  <%= @technicals.ma5 %>
+</p>
+<p>
+  <strong>Ma20:</strong>
+  <%= @technicals.ma20 %>
+</p>
+<p>
+  <strong>Ma50:</strong>
+  <%= @technicals.ma50 %>
+</p>
+<p>
+  <strong>Ma100:</strong>
+  <%= @technicals.ma100 %>
+</p>
+<p>
+  <strong>Ma200:</strong>
+  <%= @technicals.ma200 %>
+</p>
+<p>
+  <strong>Rsi14:</strong>
+  <%= @technicals.rsi14 %>
+</p>
+<p>
+  <strong>Sto9:</strong>
+  <%= @technicals.sto9 %>
+</p>
+<p>
+  <strong>Wpr14:</strong>
+  <%= @technicals.wpr14 %>
+</p>
+<p>
+  <strong>Mtm14:</strong>
+  <%= @technicals.mtm14 %>
+</p>
+<p>
+  <strong>Roc14:</strong>
+  <%= @technicals.roc14 %>
+</p>
+<p>
+  <strong>Ptc:</strong>
+  <%= @technicals.ptc %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_technicals_path(@technicals) %> |
+  <%= link_to "Destroy", @technicals, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", technicals_path %>
+</p>

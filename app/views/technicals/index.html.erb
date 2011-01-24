@@ -1,0 +1,75 @@
+<% title "Technicals" %>
+
+<table>
+  <tr>
+    <th>Asset</th>
+    <th>Previous</th>
+    <th>Change</th>
+    <th>Volume Change</th>
+    <th>Week High</th>
+    <th>Week Low</th>
+    <th>Week Change</th>
+    <th>Avg Week Change</th>
+    <th>Avg Week Volume</th>
+    <th>Month High</th>
+    <th>Month Low</th>
+    <th>Month Change</th>
+    <th>Avg Month Change</th>
+    <th>Avg Month Volume</th>
+    <th>Year High</th>
+    <th>Year Low</th>
+    <th>Year Change</th>
+    <th>Avg Year Change</th>
+    <th>Avg Year Volume</th>
+    <th>Ma5</th>
+    <th>Ma20</th>
+    <th>Ma50</th>
+    <th>Ma100</th>
+    <th>Ma200</th>
+    <th>Rsi14</th>
+    <th>Sto9</th>
+    <th>Wpr14</th>
+    <th>Mtm14</th>
+    <th>Roc14</th>
+    <th>Ptc</th>
+  </tr>
+  <% for technicals in @technicals %>
+    <tr>
+      <td><%= technicals.asset_id %></td>
+      <td><%= technicals.previous %></td>
+      <td><%= technicals.change %></td>
+      <td><%= technicals.volume_change %></td>
+      <td><%= technicals.Week_high %></td>
+      <td><%= technicals.Week_low %></td>
+      <td><%= technicals.Week_change %></td>
+      <td><%= technicals.avg_week_change %></td>
+      <td><%= technicals.avg_week_volume %></td>
+      <td><%= technicals.month_high %></td>
+      <td><%= technicals.month_low %></td>
+      <td><%= technicals.month-change %></td>
+      <td><%= technicals.avg_month-change %></td>
+      <td><%= technicals.avg_month_volume %></td>
+      <td><%= technicals.year_high %></td>
+      <td><%= technicals.year_low %></td>
+      <td><%= technicals.year_change %></td>
+      <td><%= technicals.avg_year_change %></td>
+      <td><%= technicals.avg_year_volume %></td>
+      <td><%= technicals.ma5 %></td>
+      <td><%= technicals.ma20 %></td>
+      <td><%= technicals.ma50 %></td>
+      <td><%= technicals.ma100 %></td>
+      <td><%= technicals.ma200 %></td>
+      <td><%= technicals.rsi14 %></td>
+      <td><%= technicals.sto9 %></td>
+      <td><%= technicals.wpr14 %></td>
+      <td><%= technicals.mtm14 %></td>
+      <td><%= technicals.roc14 %></td>
+      <td><%= technicals.ptc %></td>
+      <td><%= link_to "Show", technicals %></td>
+      <td><%= link_to "Edit", edit_technicals_path(technicals) %></td>
+      <td><%= link_to "Destroy", technicals, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Technicals", new_technicals_path %></p>

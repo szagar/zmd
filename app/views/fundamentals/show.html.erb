@@ -1,0 +1,52 @@
+<% title "Fundamentals" %>
+
+<p>
+  <strong>Asset:</strong>
+  <%= @fundamentals.asset_id %>
+</p>
+<p>
+  <strong>Sector:</strong>
+  <%= @fundamentals.sector %>
+</p>
+<p>
+  <strong>Industry:</strong>
+  <%= @fundamentals.industry %>
+</p>
+<p>
+  <strong>Pe:</strong>
+  <%= @fundamentals.pe %>
+</p>
+<p>
+  <strong>Eps:</strong>
+  <%= @fundamentals.eps %>
+</p>
+<p>
+  <strong>Div Yield:</strong>
+  <%= @fundamentals.div_yield %>
+</p>
+<p>
+  <strong>Shares:</strong>
+  <%= @fundamentals.shares %>
+</p>
+<p>
+  <strong>Dps:</strong>
+  <%= @fundamentals.dps %>
+</p>
+<p>
+  <strong>Peg:</strong>
+  <%= @fundamentals.peg %>
+</p>
+<p>
+  <strong>P2s:</strong>
+  <%= @fundamentals.p2s %>
+</p>
+<p>
+  <strong>P2b:</strong>
+  <%= @fundamentals.p2b %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_fundamentals_path(@fundamentals) %> |
+  <%= link_to "Destroy", @fundamentals, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", fundamentals_path %>
+</p>

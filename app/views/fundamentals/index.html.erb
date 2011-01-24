@@ -1,0 +1,37 @@
+<% title "Fundamentals" %>
+
+<table>
+  <tr>
+    <th>Asset</th>
+    <th>Sector</th>
+    <th>Industry</th>
+    <th>Pe</th>
+    <th>Eps</th>
+    <th>Div Yield</th>
+    <th>Shares</th>
+    <th>Dps</th>
+    <th>Peg</th>
+    <th>P2s</th>
+    <th>P2b</th>
+  </tr>
+  <% for fundamentals in @fundamentals %>
+    <tr>
+      <td><%= fundamentals.asset_id %></td>
+      <td><%= fundamentals.sector %></td>
+      <td><%= fundamentals.industry %></td>
+      <td><%= fundamentals.pe %></td>
+      <td><%= fundamentals.eps %></td>
+      <td><%= fundamentals.div_yield %></td>
+      <td><%= fundamentals.shares %></td>
+      <td><%= fundamentals.dps %></td>
+      <td><%= fundamentals.peg %></td>
+      <td><%= fundamentals.p2s %></td>
+      <td><%= fundamentals.p2b %></td>
+      <td><%= link_to "Show", fundamentals %></td>
+      <td><%= link_to "Edit", edit_fundamentals_path(fundamentals) %></td>
+      <td><%= link_to "Destroy", fundamentals, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Fundamentals", new_fundamentals_path %></p>

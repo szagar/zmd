@@ -1,0 +1,36 @@
+<%= form_for @eod_price do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :asset_id %><br />
+    <%= f.text_field :asset_id %>
+  </p>
+  <p>
+    <%= f.label :mark_date %><br />
+    <%= f.datetime_select :mark_date %>
+  </p>
+  <p>
+    <%= f.label :open_px %><br />
+    <%= f.text_field :open_px %>
+  </p>
+  <p>
+    <%= f.label :high_px %><br />
+    <%= f.text_field :high_px %>
+  </p>
+  <p>
+    <%= f.label :low_px %><br />
+    <%= f.text_field :low_px %>
+  </p>
+  <p>
+    <%= f.label :close_px %><br />
+    <%= f.text_field :close_px %>
+  </p>
+  <p>
+    <%= f.label :volume %><br />
+    <%= f.text_field :volume %>
+  </p>
+  <p>
+    <%= f.label :open_interest %><br />
+    <%= f.text_field :open_interest %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

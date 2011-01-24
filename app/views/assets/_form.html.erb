@@ -1,0 +1,20 @@
+<%= form_for @asset do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :exchange_code %><br />
+    <%= f.text_field :exchange_code %>
+  </p>
+  <p>
+    <%= f.label :symbol %><br />
+    <%= f.text_field :symbol %>
+  </p>
+  <p>
+    <%= f.label :asset_type_id %><br />
+    <%= f.text_field :asset_type_id %>
+  </p>
+  <p>
+    <%= f.label :desc %><br />
+    <%= f.text_field :desc %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

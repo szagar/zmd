@@ -1,0 +1,40 @@
+<% title "Eod Price" %>
+
+<p>
+  <strong>Asset:</strong>
+  <%= @eod_price.asset_id %>
+</p>
+<p>
+  <strong>Mark Date:</strong>
+  <%= @eod_price.mark_date %>
+</p>
+<p>
+  <strong>Open Px:</strong>
+  <%= @eod_price.open_px %>
+</p>
+<p>
+  <strong>High Px:</strong>
+  <%= @eod_price.high_px %>
+</p>
+<p>
+  <strong>Low Px:</strong>
+  <%= @eod_price.low_px %>
+</p>
+<p>
+  <strong>Close Px:</strong>
+  <%= @eod_price.close_px %>
+</p>
+<p>
+  <strong>Volume:</strong>
+  <%= @eod_price.volume %>
+</p>
+<p>
+  <strong>Open Interest:</strong>
+  <%= @eod_price.open_interest %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_eod_price_path(@eod_price) %> |
+  <%= link_to "Destroy", @eod_price, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", eod_prices_path %>
+</p>

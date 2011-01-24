@@ -1,0 +1,9 @@
+one:
+  asset_id: 1
+  cax_date: 2011-01-23 10:53:03
+  terms: MyString
+
+two:
+  asset_id: 1
+  cax_date: 2011-01-23 10:53:03
+  terms: MyString

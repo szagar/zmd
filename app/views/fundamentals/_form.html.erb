@@ -1,0 +1,48 @@
+<%= form_for @fundamentals do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :asset_id %><br />
+    <%= f.text_field :asset_id %>
+  </p>
+  <p>
+    <%= f.label :sector %><br />
+    <%= f.text_field :sector %>
+  </p>
+  <p>
+    <%= f.label :industry %><br />
+    <%= f.text_field :industry %>
+  </p>
+  <p>
+    <%= f.label :pe %><br />
+    <%= f.text_field :pe %>
+  </p>
+  <p>
+    <%= f.label :eps %><br />
+    <%= f.text_field :eps %>
+  </p>
+  <p>
+    <%= f.label :div_yield %><br />
+    <%= f.text_field :div_yield %>
+  </p>
+  <p>
+    <%= f.label :shares %><br />
+    <%= f.text_field :shares %>
+  </p>
+  <p>
+    <%= f.label :dps %><br />
+    <%= f.text_field :dps %>
+  </p>
+  <p>
+    <%= f.label :peg %><br />
+    <%= f.text_field :peg %>
+  </p>
+  <p>
+    <%= f.label :p2s %><br />
+    <%= f.text_field :p2s %>
+  </p>
+  <p>
+    <%= f.label :p2b %><br />
+    <%= f.text_field :p2b %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

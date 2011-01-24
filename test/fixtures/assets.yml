@@ -1,0 +1,11 @@
+one:
+  exchange_code: MyString
+  symbol: MyString
+  asset_type_id: 1
+  desc: MyString
+
+two:
+  exchange_code: MyString
+  symbol: MyString
+  asset_type_id: 1
+  desc: MyString

@@ -1,0 +1,16 @@
+<%= form_for @split do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :asset_id %><br />
+    <%= f.text_field :asset_id %>
+  </p>
+  <p>
+    <%= f.label :cax_date %><br />
+    <%= f.datetime_select :cax_date %>
+  </p>
+  <p>
+    <%= f.label :terms %><br />
+    <%= f.text_field :terms %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

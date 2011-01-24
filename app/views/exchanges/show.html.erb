@@ -1,0 +1,20 @@
+<% title "Exchange" %>
+
+<p>
+  <strong>Code:</strong>
+  <%= @exchange.code %>
+</p>
+<p>
+  <strong>Name:</strong>
+  <%= @exchange.name %>
+</p>
+<p>
+  <strong>Load Issues:</strong>
+  <%= @exchange.load_issues %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_exchange_path(@exchange) %> |
+  <%= link_to "Destroy", @exchange, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", exchanges_path %>
+</p>

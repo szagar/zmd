@@ -1,0 +1,23 @@
+<% title "Assets" %>
+
+<table>
+  <tr>
+    <th>Exchange Code</th>
+    <th>Symbol</th>
+    <th>Asset Type</th>
+    <th>Desc</th>
+  </tr>
+  <% for asset in @assets %>
+    <tr>
+      <td><%= asset.exchange_code %></td>
+      <td><%= asset.symbol %></td>
+      <td><%= asset.asset_type_id %></td>
+      <td><%= asset.desc %></td>
+      <td><%= link_to "Show", asset %></td>
+      <td><%= link_to "Edit", edit_asset_path(asset) %></td>
+      <td><%= link_to "Destroy", asset, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Asset", new_asset_path %></p>

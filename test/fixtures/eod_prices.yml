@@ -1,0 +1,19 @@
+one:
+  asset_id: 1
+  mark_date: 2011-01-23 10:32:21
+  open_px: 9.99
+  high_px: 9.99
+  low_px: 9.99
+  close_px: 9.99
+  volume: 9.99
+  open_interest: 9.99
+
+two:
+  asset_id: 1
+  mark_date: 2011-01-23 10:32:21
+  open_px: 9.99
+  high_px: 9.99
+  low_px: 9.99
+  close_px: 9.99
+  volume: 9.99
+  open_interest: 9.99

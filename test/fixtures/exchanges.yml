@@ -1,0 +1,9 @@
+one:
+  code: MyString
+  name: MyString
+  load_issues: false
+
+two:
+  code: MyString
+  name: MyString
+  load_issues: false

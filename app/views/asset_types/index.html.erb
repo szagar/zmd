@@ -1,0 +1,19 @@
+<% title "Asset Types" %>
+
+<table>
+  <tr>
+    <th>Short Name</th>
+    <th>Long Name</th>
+  </tr>
+  <% for asset_type in @asset_types %>
+    <tr>
+      <td><%= asset_type.short_name %></td>
+      <td><%= asset_type.long_name %></td>
+      <td><%= link_to "Show", asset_type %></td>
+      <td><%= link_to "Edit", edit_asset_type_path(asset_type) %></td>
+      <td><%= link_to "Destroy", asset_type, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Asset Type", new_asset_type_path %></p>

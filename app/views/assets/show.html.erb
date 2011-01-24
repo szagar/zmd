@@ -1,0 +1,24 @@
+<% title "Asset" %>
+
+<p>
+  <strong>Exchange Code:</strong>
+  <%= @asset.exchange_code %>
+</p>
+<p>
+  <strong>Symbol:</strong>
+  <%= @asset.symbol %>
+</p>
+<p>
+  <strong>Asset Type:</strong>
+  <%= @asset.asset_type_id %>
+</p>
+<p>
+  <strong>Desc:</strong>
+  <%= @asset.desc %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_asset_path(@asset) %> |
+  <%= link_to "Destroy", @asset, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", assets_path %>
+</p>

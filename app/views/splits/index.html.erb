@@ -1,0 +1,21 @@
+<% title "Splits" %>
+
+<table>
+  <tr>
+    <th>Asset</th>
+    <th>Cax Date</th>
+    <th>Terms</th>
+  </tr>
+  <% for split in @splits %>
+    <tr>
+      <td><%= split.asset_id %></td>
+      <td><%= split.cax_date %></td>
+      <td><%= split.terms %></td>
+      <td><%= link_to "Show", split %></td>
+      <td><%= link_to "Edit", edit_split_path(split) %></td>
+      <td><%= link_to "Destroy", split, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Split", new_split_path %></p>

@@ -1,0 +1,20 @@
+<% title "Split" %>
+
+<p>
+  <strong>Asset:</strong>
+  <%= @split.asset_id %>
+</p>
+<p>
+  <strong>Cax Date:</strong>
+  <%= @split.cax_date %>
+</p>
+<p>
+  <strong>Terms:</strong>
+  <%= @split.terms %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_split_path(@split) %> |
+  <%= link_to "Destroy", @split, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", splits_path %>
+</p>

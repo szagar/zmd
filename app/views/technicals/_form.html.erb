@@ -1,0 +1,124 @@
+<%= form_for @technicals do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :asset_id %><br />
+    <%= f.text_field :asset_id %>
+  </p>
+  <p>
+    <%= f.label :previous %><br />
+    <%= f.text_field :previous %>
+  </p>
+  <p>
+    <%= f.label :change %><br />
+    <%= f.text_field :change %>
+  </p>
+  <p>
+    <%= f.label :volume_change %><br />
+    <%= f.text_field :volume_change %>
+  </p>
+  <p>
+    <%= f.label :Week_high %><br />
+    <%= f.text_field :Week_high %>
+  </p>
+  <p>
+    <%= f.label :Week_low %><br />
+    <%= f.text_field :Week_low %>
+  </p>
+  <p>
+    <%= f.label :Week_change %><br />
+    <%= f.text_field :Week_change %>
+  </p>
+  <p>
+    <%= f.label :avg_week_change %><br />
+    <%= f.text_field :avg_week_change %>
+  </p>
+  <p>
+    <%= f.label :avg_week_volume %><br />
+    <%= f.text_field :avg_week_volume %>
+  </p>
+  <p>
+    <%= f.label :month_high %><br />
+    <%= f.text_field :month_high %>
+  </p>
+  <p>
+    <%= f.label :month_low %><br />
+    <%= f.text_field :month_low %>
+  </p>
+  <p>
+    <%= f.label :month-change %><br />
+    <%= f.text_field :month-change %>
+  </p>
+  <p>
+    <%= f.label :avg_month-change %><br />
+    <%= f.text_field :avg_month-change %>
+  </p>
+  <p>
+    <%= f.label :avg_month_volume %><br />
+    <%= f.text_field :avg_month_volume %>
+  </p>
+  <p>
+    <%= f.label :year_high %><br />
+    <%= f.text_field :year_high %>
+  </p>
+  <p>
+    <%= f.label :year_low %><br />
+    <%= f.text_field :year_low %>
+  </p>
+  <p>
+    <%= f.label :year_change %><br />
+    <%= f.text_field :year_change %>
+  </p>
+  <p>
+    <%= f.label :avg_year_change %><br />
+    <%= f.text_field :avg_year_change %>
+  </p>
+  <p>
+    <%= f.label :avg_year_volume %><br />
+    <%= f.text_field :avg_year_volume %>
+  </p>
+  <p>
+    <%= f.label :ma5 %><br />
+    <%= f.text_field :ma5 %>
+  </p>
+  <p>
+    <%= f.label :ma20 %><br />
+    <%= f.text_field :ma20 %>
+  </p>
+  <p>
+    <%= f.label :ma50 %><br />
+    <%= f.text_field :ma50 %>
+  </p>
+  <p>
+    <%= f.label :ma100 %><br />
+    <%= f.text_field :ma100 %>
+  </p>
+  <p>
+    <%= f.label :ma200 %><br />
+    <%= f.text_field :ma200 %>
+  </p>
+  <p>
+    <%= f.label :rsi14 %><br />
+    <%= f.text_field :rsi14 %>
+  </p>
+  <p>
+    <%= f.label :sto9 %><br />
+    <%= f.text_field :sto9 %>
+  </p>
+  <p>
+    <%= f.label :wpr14 %><br />
+    <%= f.text_field :wpr14 %>
+  </p>
+  <p>
+    <%= f.label :mtm14 %><br />
+    <%= f.text_field :mtm14 %>
+  </p>
+  <p>
+    <%= f.label :roc14 %><br />
+    <%= f.text_field :roc14 %>
+  </p>
+  <p>
+    <%= f.label :ptc %><br />
+    <%= f.text_field :ptc %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

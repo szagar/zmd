@@ -1,0 +1,10 @@
+.bundle
+config/database.yml
+log/*.log
+db/load/data/*
+db/load/data/assets/*
+db/load/data/eod_marks/*
+db/load/data/exchanges/*
+tmp/**/*
+lib/.DS_STORE
+log/*

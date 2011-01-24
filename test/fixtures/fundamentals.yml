@@ -1,0 +1,25 @@
+one:
+  asset_id: 1
+  sector: MyString
+  industry: MyString
+  pe: 9.99
+  eps: 9.99
+  div_yield: 9.99
+  shares: 9.99
+  dps: 9.99
+  peg: 9.99
+  p2s: 9.99
+  p2b: 9.99
+
+two:
+  asset_id: 1
+  sector: MyString
+  industry: MyString
+  pe: 9.99
+  eps: 9.99
+  div_yield: 9.99
+  shares: 9.99
+  dps: 9.99
+  peg: 9.99
+  p2s: 9.99
+  p2b: 9.99
